@@ -1,0 +1,661 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+}
+.common-color {
+  color: #5fcf80;
+}
+.bg-color {
+  background-color: #5fcf80;
+  color: white;
+}
+header {
+  position: fixed;
+  background-color: white;
+  padding-bottom: 30px;
+  width: 100%;
+}
+
+/*================== media query for 1200px ==========*/
+
+@media (min-width: 1200px) {
+  .container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  #logo {
+    padding-left: 10rem;
+  }
+  .topnav {
+    justify-content: space-evenly;
+  }
+}
+/* ==================== navbar section ============= */
+.topnav {
+  text-align: center;
+}
+#navbar {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+#logo {
+  padding-top: 20px;
+  color: #5fcf80;
+  font-size: 40px;
+  font-weight: bold;
+}
+.nav-item {
+  list-style: none;
+}
+
+.nav-item1 {
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+}
+.nav-item1:hover {
+  color: #5fcf80;
+}
+.dropdown {
+  overflow: hidden;
+}
+.dropdown-content {
+  float: left;
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+}
+.dropdown-content li {
+  display: block;
+  float: none;
+  padding: 12px 16px;
+  text-align: left;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+  background-color: #7fd999;
+  color: white;
+}
+.active {
+  color: #5fcf80;
+}
+.selected.nav-item1 {
+  color: #5fcf80;
+}
+.start-btn {
+  background-color: #5fcf80;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 5px 20px 6px 20px;
+}
+.start-btn:hover {
+  opacity: 0.6;
+}
+
+/* ============ media query for 768px =============*/
+
+@media (min-width: 768px) {
+  #mytopnav {
+    padding-top: 5rem;
+  }
+}
+
+/* ====================desktop view================ */
+
+@media (min-width: 900px) {
+  #navbar {
+    justify-content: space-evenly;
+    display: flex;
+  }
+  #logo {
+    width: 20%;
+  }
+  .nav-item1 {
+    padding: 14px 16px;
+    font-size: 16px;
+  }
+  .nav-item {
+    float: left;
+  }
+
+  .topnav {
+    width: 80%;
+    display: flex;
+    padding-top: 40px;
+  }
+  .start-btn {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+}
+
+/* ======================== main section start ===================== */
+/* ======================banner section 1 start ========================== */
+.banner-img {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../image/hero-bg.png);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  padding-bottom: 50px;
+  color: white;
+}
+.img-btn {
+  margin-top: 20px;
+  padding: 10px 20px 10px 20px;
+  font-size: 16px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 50px;
+}
+.img-cont {
+  padding-top: 200px;
+  padding-left: 30px;
+}
+.img-cont p {
+  font-size: 18px;
+}
+.img-cont h1 {
+  font-size: 35px;
+}
+.img-cont h2 {
+  font-size: 50px;
+}
+.img-btn:hover {
+  background-color: #5fcf80;
+}
+.first-img {
+  padding-top: 15rem;
+}
+
+/* =================tablet view========== */
+
+@media (min-width: 768px) {
+  .first-img {
+    padding-top: 2rem;
+  }
+  .banner-img {
+    background-position: center top;
+    height: 40vh;
+    width: 100%;
+  }
+  .img-cont h1 {
+    font-size: 3rem;
+  }
+  .img-cont p {
+    font-size: 25px;
+  }
+  .img-cont {
+    padding-top: 130px;
+    padding-left: 3rem;
+  }
+  .img-btn {
+    font-size: 20px;
+  }
+}
+
+/* ================= desktop view ===============*/
+
+@media (min-width: 900px) {
+  .first-img {
+    padding-top: 0;
+  }
+  .banner-img {
+    padding-bottom: 8rem;
+    height: 60vh;
+    width: 100%;
+  }
+  .img-cont {
+    padding-top: 200px;
+    padding-left: 6rem;
+  }
+}
+/* ==================== banner section end ====================*/
+/* ===================  About section 2 start ====================== */
+
+.about {
+  padding: 20px 10px 20px 30px;
+}
+.para-1 {
+  font-style: italic;
+}
+
+.about-cont p i {
+  color: #5fcf80;
+}
+
+/* =============== desktop view =========== */
+/* ============== media query for 900px =============*/
+
+@media (min-width: 900px) {
+  .about {
+    display: flex;
+    padding-top: 5rem;
+    font-size: 16px;
+  }
+  .about-img {
+    padding-right: 30px;
+  }
+  @media (min-width: 1200px) {
+    .about {
+      display: flex;
+      padding-top: 5rem;
+      font-size: 20px;
+    }
+    .about-cont {
+      padding-left: 70px;
+    }
+    .about-img {
+      padding-right: 30px;
+    }
+  }
+}
+
+/*  ===================== count section 3 start ======================*/
+
+.count {
+  background-color: #f6f7f6;
+}
+.count-cont {
+  text-align: center;
+  padding: 20px 20px;
+}
+.count2 {
+  padding: 10px 10px;
+}
+.count2 span {
+  font-weight: bold;
+}
+
+/* ==================== tablet view ===================*/
+/* ==================== media query for 768px ================*/
+
+@media (min-width: 768px) {
+  .count-cont {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 5rem;
+  }
+  .count2 {
+    width: 40%;
+    font-size: 20px;
+  }
+  .count2 span {
+    font-size: 3rem;
+  }
+}
+
+/* ====================desktop view==================== */
+/* =============== medai quewry for 900px ===========*/
+@media (min-width: 900px) {
+  .count-cont {
+    padding-left: 0px;
+  }
+  .count2 {
+    width: 23%;
+    justify-content: space-evenly;
+  }
+}
+
+/* ================= count section 3 end ====================*/
+
+/* ================ choose the menter section 4 start ==================== */
+
+.choose-mentor {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding: 30px 30px;
+}
+.choose-mentor p {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.mentor-btn button {
+  background-color: #7fd999;
+  border-radius: 50px;
+  border: none;
+  padding: 10px 20px 10px 20px;
+}
+.mentor-btn {
+  text-align: center;
+}
+.mentor-btn:hover {
+  opacity: 0.6;
+}
+.mentor-item {
+  text-align: center;
+  padding: 30px 30px;
+  border: 1px solid rgb(172, 170, 170);
+  margin: 20px 20px 20px 20px;
+}
+.mentor-item h3 {
+  padding: 10px 10px;
+}
+.mentor-icon i {
+  font-size: 30px;
+  background-color: #ecf9f0;
+  padding: 20px 20px 20px 20px;
+  border-radius: 50%;
+}
+/* ================== desktop view =================*/
+@media (min-width: 900px) {
+  .mentor-all {
+    display: flex;
+    padding-left: 3rem;
+    margin-top: 3rem;
+  }
+  .box {
+    width: 60%;
+    padding: 30px 30px;
+    border-radius: 10px;
+  }
+  .mentor-item {
+    border: 1px solid #eef0ef;
+    width: 30%;
+    margin: 20px 10px 20px 10px;
+  }
+  @media (min-width: 1200px) {
+    .box {
+      width: 25%;
+      border-radius: 10px;
+    }
+    .mentor-item {
+      width: 20%;
+      margin: 20px 20px 20px 20px;
+    }
+  }
+}
+/* <!-- ===========================choose the menter section 4 end========================== --> */
+
+/* <!-- =============================small-icons =============== --> */
+
+.i1 i {
+  font-size: 30px;
+  color: #ffbb2c;
+  padding-right: 1rem;
+}
+.i2 i {
+  font-size: 30px;
+  color: #ffbb2c;
+  padding-right: 1rem;
+}
+.i3 i {
+  font-size: 30px;
+  color: #5578ff;
+  padding-right: 1rem;
+}
+.i4 i {
+  font-size: 30px;
+  color: #e80368;
+  padding-right: 1rem;
+}
+.i5 i {
+  font-size: 30px;
+  color: #e467ff;
+  padding-right: 1rem;
+}
+.i6 i {
+  padding-right: 1rem;
+  font-size: 30px;
+  color: #47aeff;
+}
+.i7 i {
+  font-size: 30px;
+  color: #ffa76e;
+  padding-right: 1rem;
+}
+.i8 i {
+  font-size: 30px;
+  color: #11dbcf;
+  padding-right: 1rem;
+}
+.i13 i {
+  font-size: 30px;
+  color: #e80368;
+  padding-right: 1rem;
+}
+.i9 i {
+  font-size: 30px;
+  color: #5446ff;
+  padding-right: 1rem;
+}
+.i10 i {
+  font-size: 30px;
+  color: #b39150;
+  padding-right: 1rem;
+}
+.i11 i {
+  font-size: 30px;
+  color: #c03483;
+  padding-right: 1rem;
+}
+.i12 i {
+  font-size: 30px;
+  color: #39d06d;
+  padding-right: 1rem;
+}
+.icon-box {
+  display: flex;
+  text-align: center;
+  border: 1px solid #eef0ef;
+  padding: 20px 20px;
+  margin: 10px;
+}
+.icon-box:hover {
+  color: #5fcf80;
+  border-color: #5fcf80;
+}
+
+/* ======================tablet view==== */
+@media (min-width: 768px) {
+  .icon-box {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 25%;
+    padding: 10px 10px;
+    margin: 15px;
+  }
+  .small-icon {
+    padding-top: 50px;
+    padding-left: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 900px) {
+  .small-icon {
+    padding-left: 8rem;
+  }
+  .icon-box {
+    width: 20%;
+  }
+  @media (min-width: 1200px) {
+    .small-icon {
+      padding-left: 5rem;
+    }
+  }
+}
+/* <!-- =============================small-icons end =============== --> */
+
+/* <!-- ================================trainers img section  start============================ --> */
+
+.trainers {
+  text-align: center;
+}
+.trainers i {
+  color: #7f9b88;
+}
+.social-icon {
+  color: #7f9b88;
+}
+.social-icon i:hover {
+  color: #5fcf80;
+}
+/* ======================tablet view==== */
+@media (min-width: 768px) {
+  .trainer-cont {
+    padding: 20px 40px 20px 40px;
+  }
+  .trainers {
+    margin-top: 20px;
+    width: 35%;
+    border: 1px solid #eef0ef;
+  }
+  .trainer-all {
+    padding-top: 8rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  @media (min-width: 900px) {
+    .trainers {
+      width: 26%;
+      border: 1px solid #eef0ef;
+    }
+    .trainer-all {
+      padding-top: 8rem;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .social-icon i {
+      padding: 30px 7px 0px 7px;
+    }
+  }
+}
+/* <!-- ================================trainers img section  end============================ --> */
+
+/* ==================contact details====================*/
+.mentor-contact {
+  padding-left: 10px;
+}
+.mentorbox {
+  margin-top: 8rem;
+}
+/* =================================== */
+
+.footer-newsletter {
+  font-size: 15px;
+  margin: 10px;
+}
+
+.input-button form {
+  margin-top: 30px;
+  background: #fff;
+  padding: 8px 8px;
+  position: relative;
+  border-radius: 50px;
+  text-align: left;
+  border: 1px solid #e0e5e2;
+}
+
+.input-button form input[type="email"] {
+  border: 0;
+  padding: 4px 8px;
+  width: calc(100% - 100px);
+}
+
+.input-button form input[type="submit"] {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 0 20px 2px 20px;
+  background: #5fcf80;
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 50px;
+  box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+}
+.input-button form input[type="submit"]:hover {
+  background: #40955a;
+}
+
+/* =========================================== */
+
+.footer1 {
+  padding-top: 20px;
+}
+
+.footer1 p:hover {
+  color: #5fcf80;
+}
+.mentorbox {
+  background-color: #f9faf9;
+}
+
+/* ======================tablet view= ========== */
+@media (min-width: 768px) {
+  .footer1 {
+    width: 50%;
+  }
+  .mentor-contact {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+/* ====================desktop view */
+@media (min-width: 900px) {
+  .footer1 {
+    width: 20%;
+  }
+  .mentor-contact {
+    justify-content: space-evenly;
+  }
+}
+
+/*================================== footer start================================ */
+
+footer {
+  background-color: #eef0ef;
+}
+.footer2 {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+.social-icon1 i {
+  font-weight: bold;
+  color: white;
+  background-color: #7fd999;
+  padding: 8px 10px 8px 10px;
+  border-radius: 50px;
+}
+.social-icon1 i:hover {
+  background-color: #8df1ab;
+}
+/* ======================tablet view==== */
+
+@media (min-width: 768px) {
+  .footer2 {
+    display: flex;
+    padding-right: 30px;
+  }
+  .copyright {
+    width: 50%;
+    text-align: left;
+  }
+  .footer-icon {
+    width: 50%;
+    text-align: right;
+  }
+  .social-icon1 i {
+    font-weight: bold;
+    color: white;
+    background-color: #7fd999;
+  }
+}
+
+/* =========================== footer section end ====================== */
